@@ -11054,12 +11054,12 @@ gap: 5px;
 }
 .min-height-56 {min-height: 56px;}
 .btn-bg-hover-3:hover {
-    background: #fff !important; 
-    color: #000 !important;
+    background: #185c37 !important; 
+    color: #fff !important;
 }
 
 .btn-bg-hover-3:hover :is(rect , path , circle , line , polygon) {
-    fill: #000;
+    fill: #fff;
 }
 
 
@@ -50030,10 +50030,9 @@ svg.prjs-shape1 {
 } 
 
 .school-id {
-    padding: 10px 20px;
+
     border-radius: 10px;
-    background: var(--main3);
-    color: white;
+    color: #000;
     font-weight: 300;
 }
 /************** preloader  ******************/

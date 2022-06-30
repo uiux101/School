@@ -931,12 +931,4 @@ var KTWidgets = {
   new Tagify(input5);
 
 
-  function preloaderFade() {
-    setTimeout(() => {
-        document.querySelector(".preloader").classList.add("faded");
-    }, 500),
-        setTimeout(() => {
-            document.querySelector(".preloader").remove();
-        }, 1e3);
-}
-window.addEventListener("load",preloaderFade());
+

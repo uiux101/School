@@ -932,3 +932,172 @@ var KTWidgets = {
 
 
 
+$('#stage1').jstree({
+    'plugins': ["wholerow", "checkbox", "types"],
+    'core': {
+        "themes" : {
+            "responsive": false,
+           
+        },
+        'data': [{
+                "text": "ابتدائي ",
+                "children": [{
+                    "text": "الصف الاول",
+                    "children": ["الفصل ","الفصل " ,"الفصل "],
+                    "state": {
+                      "opened": false
+                  },
+                },
+                {
+                  "text": "الصف الثاني",
+                  "children": ["الفصل ","الفصل " ,"الفصل "],
+                  "state": {
+                    "opened": false
+                },
+              },
+              {
+                "text": "الصف الثالث",
+                "children": ["الفصل ","الفصل " ,"الفصل "],
+                "state": {
+                  "opened": false
+              },
+            },
+              ],
+            },]
+    },
+    
+    "types" : {
+        "default" : {
+            "icon" : false
+        },
+        
+    },
+});
+
+
+$('#stage2').jstree({
+    'plugins': ["wholerow", "checkbox", "types"],
+    'core': {
+        "themes" : {
+            "responsive": false
+        },
+        'data': [{
+                "text": "ابتدائي طفولة مبكرة ",
+                "children": [{
+                    "text": "الصف الاول",
+                    "children": ["الفصل ","الفصل " ,"الفصل "],
+                    "state": {
+                      "opened": false
+                  },
+                },
+                {
+                  "text": "الصف الثاني",
+                  "children": ["الفصل ","الفصل " ,"الفصل "],
+                  "state": {
+                    "opened": false
+                },
+              },
+              {
+                "text": "الصف الثالث",
+                "children": ["الفصل ","الفصل " ,"الفصل "],
+                "state": {
+                  "opened": false
+              },
+            },
+              ],
+            },]
+    },
+    
+    "types" : {
+        "default" : {
+            "icon" : false
+        },
+        
+    },
+});
+
+
+
+$('#stage3').jstree({
+  'plugins': ["wholerow", "checkbox", "types"],
+  'core': {
+      "themes" : {
+          "responsive": false
+      },
+      'data': [{
+              "text": "المرحلة المتوسطة ",
+              "children": [{
+                  "text": "الصف الاول",
+                  "children": ["الفصل ","الفصل " ,"الفصل "],
+                  "state": {
+                    "opened": false
+                },
+              },
+              {
+                "text": "الصف الثاني",
+                "children": ["الفصل ","الفصل " ,"الفصل "],
+                "state": {
+                  "opened": false
+              },
+            },
+            {
+              "text": "الصف الثالث",
+              "children": ["الفصل ","الفصل " ,"الفصل "],
+              "state": {
+                "opened": false
+            },
+          },
+            ],
+          },]
+  },
+  
+  "types" : {
+      "default" : {
+          "icon" : false
+      },
+      
+  },
+});
+
+
+
+$('#stage4').jstree({
+  'plugins': ["wholerow", "checkbox", "types"],
+  'core': {
+      "themes" : {
+          "responsive": false
+      },
+      'data': [{
+              "text": "المرحلة الثانوية ",
+              "children": [{
+                  "text": "الصف الاول",
+                  "children": ["الفصل ","الفصل " ,"الفصل "],
+                  "state": {
+                    "opened": false
+                },
+              },
+              {
+                "text": "الصف الثاني",
+                "children": ["الفصل ","الفصل " ,"الفصل "],
+                "state": {
+                  "opened": false
+              },
+            },
+            {
+              "text": "الصف الثالث",
+              "children": ["الفصل ","الفصل " ,"الفصل "],
+              "state": {
+                "opened": false
+            },
+          },
+            ],
+          },]
+  },
+  
+  "types" : {
+      "default" : {
+          "icon" : false
+      },
+      
+  },
+});

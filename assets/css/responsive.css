@@ -1,0 +1,16 @@
+﻿
+
+@media (max-width:778px) {
+}
+
+@media screen and (max-width:575px) {
+    .card-school .symbol.symbol-100px img {
+        width: 70px;
+        height: 70px;
+    }
+    .card-school .card-body {
+        padding: 1rem 1rem;
+    }
+}
+@media screen and (max-width:480px) {
+}

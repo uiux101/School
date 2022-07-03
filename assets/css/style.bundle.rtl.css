@@ -5,7 +5,6 @@
     --main2: #faaf40 ;
     --main3: #262160;
     --main4: #1a1748;
-    
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
     --bs-pink: #d63384;
@@ -28,10 +27,10 @@
     --bs-gray-900: #181C32;
     --bs-white: #ffffff;
     --bs-light: #F5F8FA;
-    --bs-primary: #36326f;
+    --bs-primary: #0d6efd;
     --bs-secondary: #E4E6EF;
     --bs-success: #50CD89;
-    --bs-info: #7239EA;
+    --bs-info: #0dcaf0;
     --bs-warning: #FFC700;
     --bs-danger: #F1416C;
     --bs-dark: #181C32;
@@ -2340,8 +2339,8 @@ progress {
 .form-control {
     display: block;
     width: 100%;
-    padding: .75rem 1rem;
-    font-size: 1.1rem;
+    padding: .95rem 1rem;
+    font-size: .9rem;
     font-weight: 500;
     line-height: 1.5;
     color: #5e6278;
@@ -2575,16 +2574,23 @@ textarea.form-control-lg {
 }
 
 .form-select-sm {
-    padding-top: .55rem;
-    padding-bottom: .55rem;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    padding-right: .75rem;
+    font-size: .925rem;
+    border-radius: .325rem
+}
+.form-select-md {
+    padding-top: 1.1rem !important;
+    padding-bottom: 1.1rem !important;
     padding-right: .75rem;
     font-size: .925rem;
     border-radius: .325rem
 }
 
 .form-select-lg {
-    padding-top: .825rem;
-    padding-bottom: .825rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
     padding-right: 1.5rem;
     font-size: 1.15rem;
     border-radius: .625rem
@@ -3364,21 +3370,21 @@ textarea.form-control-lg {
 
     .btn-info:hover {
         color: #fff;
-        background-color: #6130c7;
-        border-color: #5b2ebb
+        background-color: #31d2f2;
+        border-color: #31d2f2
     }
 
     .btn-check:focus + .btn-info, .btn-info:focus {
         color: #fff;
-        background-color: #6130c7;
-        border-color: #5b2ebb;
+        background-color: #31d2f2;
+        border-color: #31d2f2;
         box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075),0 0 0 .25rem rgba(135,87,237,.5)
     }
 
     .btn-check:active + .btn-info, .btn-check:checked + .btn-info, .btn-info.active, .btn-info:active, .show > .btn-info.dropdown-toggle {
         color: #fff;
-        background-color: #5b2ebb;
-        border-color: #562bb0
+        background-color: #31d2f2;
+        border-color: #31d2f2
     }
 
         .btn-check:active + .btn-info:focus, .btn-check:checked + .btn-info:focus, .btn-info.active:focus, .btn-info:active:focus, .show > .btn-info.dropdown-toggle:focus {
@@ -3387,8 +3393,8 @@ textarea.form-control-lg {
 
     .btn-info.disabled, .btn-info:disabled {
         color: #fff;
-        background-color: #7239ea;
-        border-color: #7239ea
+        background-color: #31d2f2;
+        border-color: #31d2f2
     }
 
 .btn-warning {
@@ -3429,16 +3435,12 @@ textarea.form-control-lg {
 
 .btn-danger {
     color: #000;
-    background-color: #f1416c;
-    border-color: #f1416c;
+    background-color: var(--bs-red);
+    border-color: var(--bs-red);
     box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075)
 }
 
-    .btn-danger:hover {
-        color: #000;
-        background-color: #f35e82;
-        border-color: #f2547b
-    }
+  
 
     .btn-check:focus + .btn-danger, .btn-danger:focus {
         color: #000;
@@ -10979,17 +10981,18 @@ transition: .3s ease-in-out;
 
 
 .btn-view-1 {
-    padding:7px;
-    text-align: center;
-    width: 95px;
+padding:7px;
+text-align: center;
+width: 95px;
 border-radius: 5px;
-background: var(--main2);
+background: var(--bs-info);
+border-color: var(--bs-info);
 transition: .3s ease-in-out;
 display: flex;
 justify-content: center;
 align-items: center;
 gap: 5px;
-
+color: #fff;
 }
 
 .btn-view-1:hover {
@@ -11011,7 +11014,7 @@ gap: 5px;
 }
 
 .btn-bg-hover-1:hover {
-    background: var(--main2) !important; 
+    background: red !important; 
     color: #fff !important;
 }
 
@@ -11033,13 +11036,10 @@ gap: 5px;
 }
 
 .btn-bg-hover-2:hover {
-    background: var(--bs-light) !important; 
-    color: #000 !important;
+    background: var(--main4) !important; 
+    color: #fff !important;
 }
 
-.btn-bg-hover-2:hover :is(rect , path , circle , line , polygon) {
-    fill: #000;
-}
 
 
 .btn-bg-hover-3 {
@@ -38081,8 +38081,8 @@ a {
 
     .btn.btn-primary {
         color: #fff;
-        border-color: #36326f;
-        background-color: #36326f
+        border-color: var(--bs-primary);
+        background-color: var(--bs-primary)
     }
     .btn.btn-redd {
         color: #fff;
@@ -38100,8 +38100,8 @@ a {
 
         .btn-check:active + .btn.btn-primary, .btn-check:checked + .btn.btn-primary, .btn.btn-primary.active, .btn.btn-primary.show, .btn.btn-primary:active:not(.btn-active), .btn.btn-primary:focus:not(.btn-active), .btn.btn-primary:hover:not(.btn-active), .show > .btn.btn-primary {
             color: #fff;
-            border-color: var(--main2);
-            background-color: var(--main2) !important
+            border-color: #0b5ed7;
+            background-color: #0b5ed7 !important
         }
 
             .btn-check:active + .btn.btn-primary .svg-icon, .btn-check:active + .btn.btn-primary i, .btn-check:checked + .btn.btn-primary .svg-icon, .btn-check:checked + .btn.btn-primary i, .btn.btn-primary.active .svg-icon, .btn.btn-primary.active i, .btn.btn-primary.show .svg-icon, .btn.btn-primary.show i, .btn.btn-primary:active:not(.btn-active) .svg-icon, .btn.btn-primary:active:not(.btn-active) i, .btn.btn-primary:focus:not(.btn-active) .svg-icon, .btn.btn-primary:focus:not(.btn-active) i, .btn.btn-primary:hover:not(.btn-active) .svg-icon, .btn.btn-primary:hover:not(.btn-active) i, .show > .btn.btn-primary .svg-icon, .show > .btn.btn-primary i {
@@ -38320,7 +38320,7 @@ a {
     .btn.btn-info {
         color: #fff;
         border-color: #7239ea;
-        background-color: #7239ea
+        background-color: #0dcaf0
     }
 
         .btn.btn-info .svg-icon, .btn.btn-info i {
@@ -38333,8 +38333,8 @@ a {
 
         .btn-check:active + .btn.btn-info, .btn-check:checked + .btn.btn-info, .btn.btn-info.active, .btn.btn-info.show, .btn.btn-info:active:not(.btn-active), .btn.btn-info:focus:not(.btn-active), .btn.btn-info:hover:not(.btn-active), .show > .btn.btn-info {
             color: #fff;
-            border-color: #5014d0;
-            background-color: #5014d0 !important
+            border-color:#31d2f2;
+            background-color: #31d2f2 !important
         }
 
             .btn-check:active + .btn.btn-info .svg-icon, .btn-check:active + .btn.btn-info i, .btn-check:checked + .btn.btn-info .svg-icon, .btn-check:checked + .btn.btn-info i, .btn.btn-info.active .svg-icon, .btn.btn-info.active i, .btn.btn-info.show .svg-icon, .btn.btn-info.show i, .btn.btn-info:active:not(.btn-active) .svg-icon, .btn.btn-info:active:not(.btn-active) i, .btn.btn-info:focus:not(.btn-active) .svg-icon, .btn.btn-info:focus:not(.btn-active) i, .btn.btn-info:hover:not(.btn-active) .svg-icon, .btn.btn-info:hover:not(.btn-active) i, .show > .btn.btn-info .svg-icon, .show > .btn.btn-info i {
@@ -38505,8 +38505,8 @@ a {
 
     .btn.btn-danger {
         color: #fff;
-        border-color: #f1416c;
-        background-color: #f1416c
+        border-color: var(--bs-red);
+        background-color:var(--bs-red)
     }
 
         .btn.btn-danger .svg-icon, .btn.btn-danger i {
@@ -38519,8 +38519,8 @@ a {
 
         .btn-check:active + .btn.btn-danger, .btn-check:checked + .btn.btn-danger, .btn.btn-danger.active, .btn.btn-danger.show, .btn.btn-danger:active:not(.btn-active), .btn.btn-danger:focus:not(.btn-active), .btn.btn-danger:hover:not(.btn-active), .show > .btn.btn-danger {
             color: #fff;
-            border-color: #d9214e;
-            background-color: #d9214e !important
+            border-color: #bb2d3b;
+            background-color: #bb2d3b !important
         }
 
             .btn-check:active + .btn.btn-danger .svg-icon, .btn-check:active + .btn.btn-danger i, .btn-check:checked + .btn.btn-danger .svg-icon, .btn-check:checked + .btn.btn-danger i, .btn.btn-danger.active .svg-icon, .btn.btn-danger.active i, .btn.btn-danger.show .svg-icon, .btn.btn-danger.show i, .btn.btn-danger:active:not(.btn-active) .svg-icon, .btn.btn-danger:active:not(.btn-active) i, .btn.btn-danger:focus:not(.btn-active) .svg-icon, .btn.btn-danger:focus:not(.btn-active) i, .btn.btn-danger:hover:not(.btn-active) .svg-icon, .btn.btn-danger:hover:not(.btn-active) i, .show > .btn.btn-danger .svg-icon, .show > .btn.btn-danger i {
@@ -50172,3 +50172,7 @@ svg.prjs-shape1 {
       opacity: 0;
     }
   }
+
+
+
+  

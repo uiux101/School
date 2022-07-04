@@ -49704,9 +49704,9 @@ body {
     .content {
         padding: 15px 0
     }
-    .toolbar-enabled:not(.toolbar-tablet-and-mobile-fixed) .content {
+    /* .toolbar-enabled:not(.toolbar-tablet-and-mobile-fixed) .content {
         padding-top: 0
-    }
+    } */
 }
 .footer {
     background-color: #fff

@@ -18,9 +18,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;500;800&display=swap" rel="stylesheet" />
 
-    <!--begin::Page Vendor Stylesheets(used by this page)-->
-    <link href="assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/custom/jstree/jstree.bundle.css" rel="stylesheet" type="text/css" />
+       <!--begin::Page Vendor Stylesheets(used by this page)-->
+       <link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+       <link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+      
     <!--begin::Global Stylesheets Bundle(used by all pages)-->
     <link href="assets/plugins/global/plugins.bundle.rtl.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/style.bundle.rtl.css" rel="stylesheet" type="text/css" />
@@ -359,7 +360,6 @@
               </div>
             </div>
           </div>
-
           <!--begin::Header-->
           <div id="kt_header" class="header align-items-stretch">
             <!--begin::Container-->
@@ -489,9 +489,8 @@
           </div>
           <!--end::Header-->
           <!--begin::Content-->
-
           <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
-            <div class="bg-transparent mb-md-10 mb-sm-5" id="kt_toolbar">
+            <div class="bg-transparent mb-md-10 mb-5" id="kt_toolbar">
               <!--begin::Container-->
               <div id="kt_toolbar_container" class="container-xxl d-flex flex-stack">
                 <!--begin::Page title-->
@@ -502,10 +501,10 @@
                     <!--begin::Description-->
                     <span class="text-muted fs-7 fw-bold mt-2">
                       <a href="#">
-                      <span class="text-primary"> الرئيسية</span>
-                    </a>
+                        <span class="text-primary"> الرئيسية</span>
+                      </a>
 
-                        <span class="text-muted"> اسم الصفحة </span>
+                      <span class="text-muted"> اسم الصفحة </span>
                     </span>
                     <!--end::Description-->
                   </h1>
@@ -518,7 +517,7 @@
             <!--begin::Post-->
             <div class="post d-flex w-100 flex-column-fluid" id="kt_post">
               <!--begin::Container-->
-              <div id="kt_content_container" class="container-xxl main-school">
+              <div id="kt_content_container" class="container-xxl ">
                 <!--begin::Basic info-->
                 <div class="card">
                   <!--begin::Card header-->
@@ -621,8 +620,8 @@
                         <div class="col-lg-8">
                           <div class="row g-4">
                             <div class="col-12 fv-row">
-                              <label class="form-check form-check-custom form-check-solid align-items-start mb-3">
-                                <input class="form-check-input me-3" type="checkbox" value="1" />
+                              <label class="form-check form-check-custom form-check-solid align-items-start mb-3" >
+                                <input class="form-check-input me-3" type="checkbox"  value="1" name="Checkboxes1"  checked="checked">
                                 <span class="form-check-label d-flex flex-column align-items-start">
                                   <span class="fs-5 mb-0">ابتدائي</span>
                                 </span>
@@ -632,7 +631,7 @@
                                 <div class="row">
                                   <div class="col-md-4 my-2">
                                     <label class="form-check form-check-custom form-check-solid align-items-start mb-3">
-                                      <input class="form-check-input me-3" type="checkbox" value="1" />
+                                      <input class="form-check-input me-3" type="checkbox" value="1" name="Checkboxes1"  checked="checked"/>
                                       <span class="form-check-label d-flex flex-column align-items-start">
                                         <span class="fs-5 mb-0">الصف الاول</span>
                                       </span>
@@ -643,7 +642,7 @@
 
                                   <div class="col-md-4 my-2">
                                     <label class="form-check form-check-custom form-check-solid align-items-start mb-3">
-                                      <input class="form-check-input me-3" type="checkbox" value="1" />
+                                      <input class="form-check-input me-3" type="checkbox" value="1" name="Checkboxes1"  checked="checked"/>
                                       <span class="form-check-label d-flex flex-column align-items-start">
                                         <span class="fs-5 mb-0">الصف الثاني</span>
                                       </span>
@@ -653,7 +652,7 @@
 
                                   <div class="col-md-4 my-2">
                                     <label class="form-check form-check-custom form-check-solid align-items-start mb-3">
-                                      <input class="form-check-input me-3" type="checkbox" value="1" />
+                                      <input class="form-check-input me-3" type="checkbox" value="1" name="Checkboxes1"  checked="checked" />
                                       <span class="form-check-label d-flex flex-column align-items-start">
                                         <span class="fs-5 mb-0">الصف الثالث</span>
                                       </span>
@@ -663,7 +662,7 @@
 
                                   <div class="col-md-4 my-2">
                                     <label class="form-check form-check-custom form-check-solid align-items-start mb-3">
-                                      <input class="form-check-input me-3" type="checkbox" value="1" />
+                                      <input class="form-check-input me-3" type="checkbox" value="1" name="Checkboxes1"  checked="checked"/>
                                       <span class="form-check-label d-flex flex-column align-items-start">
                                         <span class="fs-5 mb-0">الصف الرابع</span>
                                       </span>
@@ -702,7 +701,7 @@
                               </div>
 
                               <label class="form-check form-check-custom form-check-solid align-items-start mb-3">
-                                <input class="form-check-input me-3" type="checkbox" value="1" />
+                                <input class="form-check-input me-3" type="checkbox" value="1" name="Checkboxes1"  checked="checked"/>
                                 <span class="form-check-label d-flex flex-column align-items-start">
                                   <span class="fs-5 mb-0">ابتدائي طفولة مبكرة</span>
                                 </span>
@@ -712,7 +711,7 @@
                                 <div class="row">
                                   <div class="col-md-4 my-2">
                                     <label class="form-check form-check-custom form-check-solid align-items-start mb-3">
-                                      <input class="form-check-input me-3" type="checkbox" value="1" />
+                                      <input class="form-check-input me-3" type="checkbox" value="1" name="Checkboxes1"  checked="checked"/>
                                       <span class="form-check-label d-flex flex-column align-items-start">
                                         <span class="fs-5 mb-0">الصف الاول</span>
                                       </span>
@@ -723,7 +722,7 @@
 
                                   <div class="col-md-4 my-2">
                                     <label class="form-check form-check-custom form-check-solid align-items-start mb-3">
-                                      <input class="form-check-input me-3" type="checkbox" value="1" />
+                                      <input class="form-check-input me-3" type="checkbox" value="1" name="Checkboxes1"  checked="checked"/>
                                       <span class="form-check-label d-flex flex-column align-items-start">
                                         <span class="fs-5 mb-0">الصف الثاني</span>
                                       </span>
@@ -733,7 +732,7 @@
 
                                   <div class="col-md-4 my-2">
                                     <label class="form-check form-check-custom form-check-solid align-items-start mb-3">
-                                      <input class="form-check-input me-3" type="checkbox" value="1" />
+                                      <input class="form-check-input me-3" type="checkbox" value="1" name="Checkboxes1"  checked="checked"/>
                                       <span class="form-check-label d-flex flex-column align-items-start">
                                         <span class="fs-5 mb-0">الصف الثالث</span>
                                       </span>
@@ -973,17 +972,12 @@
                         <!--end::Label-->
                         <!--begin::Col-->
                         <div class="col-lg-8">
-                          <!--begin::Row-->
+                          <!--begin::Row--> 
                           <div class="row">
                             <!--begin::Col-->
 
                             <div class="col-lg-12 fv-row">
-                              <select name="language" data-control="select2" data-placeholder="التاريخ" class="form-select select-kindd form-select-solid form-select-md">
-                                <option></option>
-                                <option value="2">2011</option>
-                                <option value="3">2012</option>
-                                <option value="4">2013</option>
-                              </select>
+                              <input class="form-control form-control-solid" placeholder="" id="kt_modal_date" />
                             </div>
                             <!--end::Col-->
                           </div>
@@ -1277,17 +1271,16 @@
       <!--end::Svg Icon-->
     </div>
     <!--end::Scrolltop-->
-    <!--begin::Javascript-->
-    <script src="assets/plugins/global/plugins.bundle.js"></script>
-    <script src="assets/js/scripts.bundle.js"></script>
-    <!--end::Global Javascript Bundle-->
+  <!--begin::Global Javascript Bundle(used by all pages)-->
+  <script src="assets/plugins/global/plugins.bundle.js"></script>
+  <script src="assets/js/scripts.bundle.js"></script>
+  <!--end::Global Javascript Bundle-->
+  <!--begin::Page Vendors Javascript(used by this page)-->
 
-    <script src="assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
-    <script src="assets/plugins/custom/jstree/jstree.bundle.js"></script>
-
-    <script src="assets/js/custom/documentation/general/jstree/checkable.js"></script>
-
-    <script src="assets/js/custom/widgets.js"></script>
+  <script src="assets/plugins/custom/formrepeater/formrepeater.bundle.js"></script>
+  <!--end::Page Vendors Javascript-->
+  <!--begin::Page Custom Javascript(used by this page)-->
+  <script src="assets/js/widgets.bundle.js"></script>
   </body>
   <!--end::Body-->
 </html>

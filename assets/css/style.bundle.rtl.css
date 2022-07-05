@@ -38537,6 +38537,10 @@ a {
         background-color: #fff5f8
     }
 
+    .btn.btn-light-danger:hover :is(path) {
+        fill: #fff;
+    }
+
         .btn.btn-light-danger .svg-icon, .btn.btn-light-danger i {
             color: #f1416c
         }
@@ -49991,9 +49995,7 @@ svg.prjs-shape1 {
     margin-top: -92px !important;
 }}
 
-.main-school{
-    margin-top:10px!important
-}
+
 
 .img-edit .btn svg {
     width: 15px !important;

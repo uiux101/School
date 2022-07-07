@@ -18,14 +18,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;500;800&display=swap" rel="stylesheet" />
 
-       <!--begin::Page Vendor Stylesheets(used by this page)-->
-       <link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
-       <link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
-      
+    <!--begin::Page Vendor Stylesheets(used by this page)-->
+    <!--end::Page Vendor Stylesheets-->
     <!--begin::Global Stylesheets Bundle(used by all pages)-->
     <link href="assets/plugins/global/plugins.bundle.rtl.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/style.bundle.rtl.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/responsive.css" rel="stylesheet" />
+    <link href="assets/css/letter-style.css" rel="stylesheet" />
+
 
     <!--end::Global Stylesheets Bundle-->
     <!--end::Global Stylesheets Bundle-->
@@ -43,7 +43,7 @@
           <!--begin::Brand-->
           <div class="aside-logo flex-column-auto" id="kt_aside_logo">
             <!--begin::Logo-->
-            <a href="home.html">
+            <a href="index.html">
               <img alt="Logo" src="assets/media/logos/logo-main.png" class="h-25px logo" />
             </a>
             <!--end::Logo-->
@@ -104,7 +104,7 @@
                   </span>
                   <div class="menu-sub menu-sub-accordion menu-active-bg" kt-hidden-height="150">
                     <div class="menu-item">
-                      <a class="menu-link active" href="school-info.html">
+                      <a class="menu-link" href="school-info.html">
                         <span class="menu-bullet">
                           <span class="bullet bullet-dot"></span>
                         </span>
@@ -157,7 +157,6 @@
                     </div>
                   </div>
                 </div>
-
                 <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
                   <span class="menu-link">
                     <span class="menu-icon">
@@ -209,7 +208,6 @@
                     </div>
                   </div>
                 </div>
-
                 <div class="menu-item">
                   <a class="menu-link" href="school-staff.html">
                     <span class="menu-icon">
@@ -360,8 +358,9 @@
               </div>
             </div>
           </div>
+
           <!--begin::Header-->
-          <div id="kt_header" class="header align-items-stretch">
+          <div id="kt_header" class="header align-items-stretch d-print-none">
             <!--begin::Container-->
             <div class="container-fluid d-flex align-items-stretch justify-content-between">
               <!--begin::Aside mobile toggle-->
@@ -489,22 +488,21 @@
           </div>
           <!--end::Header-->
           <!--begin::Content-->
-          <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
-            <div class="bg-transparent mb-md-10 mb-5" id="kt_toolbar">
+          <div class="content student-table d-flex flex-column flex-column-fluid" id="kt_content">
+            <div class="bg-transparent mb-md-10 mb-5 d-print-none" id="kt_toolbar">
               <!--begin::Container-->
               <div id="kt_toolbar_container" class="container-xxl d-flex flex-stack">
                 <!--begin::Page title-->
                 <div data-kt-swapper="true" class="page-title d-flex flex-column align-items-start me-3 my-sm-5 my-lg-0">
                   <!--begin::Title-->
                   <h1 class="d-flex text-dark fw-bolder fs-3 flex-column mb-0">
-                    بيانات المدرسة
+                    اسم الخطاب
                     <!--begin::Description-->
                     <span class="text-muted fs-7 fw-bold mt-2">
                       <a href="#">
-                        <span class="text-primary"> الرئيسية</span>
+                        <span class="text-primary"> الخطابات الرسمية</span>
                       </a>
-
-                      <span class="text-muted"> اسم الصفحة </span>
+                      <span class="text-muted"> اسم الخطاب </span>
                     </span>
                     <!--end::Description-->
                   </h1>
@@ -515,637 +513,183 @@
             </div>
 
             <!--begin::Post-->
-            <div class="post d-flex w-100 flex-column-fluid" id="kt_post">
+            <div class="post d-flex flex-column-fluid" id="kt_post">
               <!--begin::Container-->
-              <div id="kt_content_container" class="container-xxl ">
-                <!--begin::Basic info-->
+              <div id="kt_content_container" class="container-xxl">
                 <div class="card">
-                  <!--begin::Card header-->
-                  <div class="card-header border-0 justify-content-start">
-                    <!--begin::Card title-->
-                    <div class="card-title m-0">
-                      <h3 class="fw-bolder m-0">الرقم التعريفي للمدرسة</h3>
+                  <!-- begin::Body-->
+                  <div class="card-body py-20">
+                    <div class="mw-lg-950px mx-auto w-100">
+                      <!-- <div class=""> -->
+                      <!-- begin::Header-->
+                      <div class=" invoice-header" ">
+
+                        <h6>اكتب ما تريد هنا</h6>
+                      <h6>اكتب ما تريد هنا</h6>
+                      <h5 class="align-self-start">اسم المدرسة يظهر هنا</h5>
                     </div>
+                    <!--end::Header-->
+                    <!--begin::Body-->
+                    <div class="pb-12">
+                      <div class="d-flex flex-column gap-7 gap-md-10">
+                        <div class="fw-bolder fs-2">
+                          <span class="fs-6">سعادة /</span>
 
-                    <h3 class="school-id ms-4 mb-0 fw-bold">SC78335161512</h3>
+                          <span class="fw-normal fs-5"> مدير الشئون التعليمية </span>
+                          <span class="fw-normal fs-5"> المحترم </span>
+                          <br />
+                          <span class=" mb-0 pb-0 special-text">السلام عليكم ورحمة الله و بركاته</span>
+                        </div>
 
-                    <!--end::Card title-->
+                        <div class="separator"></div>
+                        <h6>موضوع الخطاب يظهر هنا</h6>
+
+                        <p class="letter-text">
+                          هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات
+                          محرجة هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة
+                        </p>
+
+                        <div class=" letter-sign">
+                          <h6 >   مدير المدرسة</h6>
+                          <h6> توقيع مدير المدرسة</h6>
+                        </div>
+
+                      </div>
+                    </div>
+                    <!--end::Body-->
+                    <!-- begin::Footer-->
+                    <div class="d-flex flex-stack flex-wrap mt-lg-20 pt-13 d-print-none">
+                      <!-- begin::Actions-->
+                      <div class="my-1 me-5">
+                        <!-- begin::Pint-->
+                        <button type="button" class="btn btn-primary my-1" onclick="window.print();">طباعة</button>
+                        <!-- end::Pint-->
+                        <!-- begin::Download-->
+                        <button type="reset" class="btn btn-light btn-active-light-primary ms-2">تحميل</button>
+                        <!-- end::Download-->
+                      </div>
+                      <!-- end::Actions-->
+                      <!-- begin::Action-->
+
+                      <!-- end::Action-->
+                    </div>
+                    <!-- end::Footer-->
                   </div>
-                  <!--begin::Card header-->
-                  <!--begin::Content-->
-                  <div id="kt_account_settings_profile_details" class="collapse show">
+                  <!-- end::Wrapper-->
+                </div>
+                <!-- end::Body-->
+              </div>
+
+              <!--begin::Modal - Customers - Add-->
+              <div class="modal fade" id="kt_modal_add_customer" tabindex="-1" aria-hidden="true">
+                <!--begin::Modal dialog-->
+                <div class="modal-dialog modal-dialog-centered mw-650px">
+                  <!--begin::Modal content-->
+                  <div class="modal-content">
                     <!--begin::Form-->
-
-                    <!--begin::Card body-->
-                    <div class="card-body border-top p-9">
-                      <!--begin::Input group-->
-                      <div class="row mb-6">
-                        <!--begin::Label-->
-                        <label class="col-lg-4 col-form-label fw-bold fs-6">صورة المدرسة</label>
-                        <!--end::Label-->
-                        <!--begin::Col-->
-                        <div class="col-lg-8">
-                          <!--begin::Image input-->
-                          <div class="img-edit image-input image-input-outline" data-kt-image-input="true" style="background-image: url('assets/media/svg/avatars/blank.svg')">
-                            <!--begin::Preview existing avatar-->
-                            <div class="image-input-wrapper w-125px h-125px" style="background-image: url(assets/media/avatars/logo-m.png)"></div>
-                            <!--end::Preview existing avatar-->
-                            <!--begin::Label-->
-                            <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" title="تغير لوقو المدرسة">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path
-                                  opacity="0.3"
-                                  d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z"
-                                  fill="currentColor"
-                                />
-                                <path d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z" fill="currentColor" />
-                              </svg>
-                              <!--begin::Inputs-->
-                              <input type="file" name="avatar" accept=".png, .jpg, .jpeg" />
-                              <input type="hidden" name="avatar_remove" />
-                              <!--end::Inputs-->
-                            </label>
-                            <!--end::Label-->
-                            <!--begin::Cancel-->
-                            <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="cancel" data-bs-toggle="tooltip" title="اعادة القديم ">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path
-                                  d="M14.5 20.7259C14.6 21.2259 14.2 21.826 13.7 21.926C13.2 22.026 12.6 22.0259 12.1 22.0259C9.5 22.0259 6.9 21.0259 5 19.1259C1.4 15.5259 1.09998 9.72592 4.29998 5.82592L5.70001 7.22595C3.30001 10.3259 3.59999 14.8259 6.39999 17.7259C8.19999 19.5259 10.8 20.426 13.4 19.926C13.9 19.826 14.4 20.2259 14.5 20.7259ZM18.4 16.8259L19.8 18.2259C22.9 14.3259 22.7 8.52593 19 4.92593C16.7 2.62593 13.5 1.62594 10.3 2.12594C9.79998 2.22594 9.4 2.72595 9.5 3.22595C9.6 3.72595 10.1 4.12594 10.6 4.02594C13.1 3.62594 15.7 4.42595 17.6 6.22595C20.5 9.22595 20.7 13.7259 18.4 16.8259Z"
-                                  fill="currentColor"
-                                />
-                                <path opacity="0.3" d="M2 3.62592H7C7.6 3.62592 8 4.02592 8 4.62592V9.62589L2 3.62592ZM16 14.4259V19.4259C16 20.0259 16.4 20.4259 17 20.4259H22L16 14.4259Z" fill="currentColor" />
-                              </svg>
-                            </span>
-                            <!--end::Cancel-->
-                            <!--begin::Remove-->
-                            <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="remove" data-bs-toggle="tooltip" title="مسح اللوقو ">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="currentColor" />
-                                <path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="currentColor" />
-                                <path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="currentColor" />
-                              </svg>
-                            </span>
-                            <!--end::Remove-->
-                          </div>
-                          <!--end::Image input-->
-                          <!--begin::Hint-->
-                          <div class="form-text">نسمح برفع جميع صيغ الصور بمقاس 400*400</div>
-                          <!--end::Hint-->
+                    <form class="form" action="#" id="kt_modal_add_customer_form" data-kt-redirect="../../demo1/dist/apps/customers/list.html">
+                      <!--begin::Modal header-->
+                      <div class="modal-header" id="kt_modal_add_customer_header">
+                        <!--begin::Modal title-->
+                        <h2 class="fw-bolder">انشاء خطاب جديد</h2>
+                        <!--end::Modal title-->
+                        <!--begin::Close-->
+                        <div id="kt_modal_add_customer_close" class="btn btn-icon btn-sm btn-active-icon-primary">
+                          <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+                          <span class="svg-icon svg-icon-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="currentColor" />
+                              <rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="currentColor" />
+                            </svg>
+                          </span>
+                          <!--end::Svg Icon-->
                         </div>
-                        <!--end::Col-->
+                        <!--end::Close-->
                       </div>
-                      <!--end::Input group-->
-                      <!--begin::Input group-->
-                      <div class="row mb-6">
-                        <!--begin::Label-->
-                        <label class="col-lg-4 col-form-label required fw-bold fs-6">اسم المدرسة </label>
-                        <!--end::Label-->
-                        <!--begin::Col-->
-                        <div class="col-lg-8">
-                          <!--begin::Row-->
-                          <div class="row">
+                      <!--end::Modal header-->
+                      <!--begin::Modal body-->
+                      <div class="modal-body py-10 px-lg-17">
+                        <!--begin::Scroll-->
+                        <div class="scroll-y me-n7 pe-7" id="kt_modal_add_customer_scroll" data-kt-scroll="true" data-kt-scroll-activate="{default: false, lg: true}" data-kt-scroll-max-height="auto" data-kt-scroll-dependencies="#kt_modal_add_customer_header" data-kt-scroll-wrappers="#kt_modal_add_customer_scroll" data-kt-scroll-offset="300px">
+                          <!--begin::Input group-->
+                          <div class="row g-9 mb-7">
                             <!--begin::Col-->
-                            <div class="col-lg-12 fv-row">
-                              <input type="text" name="fname" class="form-control form-control-md form-control-solid mb-3 mb-lg-0" placeholder="اسم المدرسة" />
+                            <div class="col-md-6 fv-row">
+                              <!--begin::Label-->
+                              <label class="required fs-6 fw-bold mb-2">المرسل اليه</label>
+                              <!--end::Label-->
+                              <!--begin::Input-->
+                              <input class="form-control form-control-solid" placeholder="" name="name" />
+                              <!--end::Input-->
+                            </div>
+                            <!--end::Col-->
+                            <!--begin::Col-->
+                            <div class="col-md-6 fv-row">
+                              <!--begin::Label-->
+                              <label class="required fs-6 fw-bold mb-2">الموضوع</label>
+                              <!--end::Label-->
+                              <!--begin::Input-->
+                              <input class="form-control form-control-solid" placeholder="" name="student-id" />
+                              <!--end::Input-->
                             </div>
                             <!--end::Col-->
                           </div>
-                          <!--end::Row-->
-                        </div>
-                        <!--end::Col-->
-                      </div>
+                          <!--end::Input group-->
 
-                      <div class="row mb-6">
-                        <label class="col-lg-4 col-form-label required fw-bold fs-6">المراحل الدراسية</label>
-                        <div class="col-lg-8">
-                          <div class="row g-4">
+                          <div class="row g-9 mb-7">
+                            <!--begin::Col-->
                             <div class="col-12 fv-row">
-
-                              <div class="d-flex align-items-center justify-content-between mb-2">
-
-
-                              <label class="form-check form-check-custom form-check-solid align-items-start mb-3" >
-                                <input class="form-check-input me-3" type="checkbox"  value="1" name="Checkboxes1"  checked="checked">
-                                <span class="form-check-label d-flex flex-column align-items-start">
-                                  <span class="fs-5 mb-0">ابتدائي</span>
-                                </span>
-                              </label>
-                              <a href="#" class="btn btn-sm btn-bg-hover-3">
-                                <span class="svg-icon svg-icon-primary svg-icon-2x">
-                                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                      <rect fill="#fff" opacity="0.3" transform="translate(12.000000, 7.000000) rotate(-180.000000) translate(-12.000000, -7.000000) " x="11" y="1" width="2" height="12" rx="1"></rect>
-                                      <path d="M17,8 C16.4477153,8 16,7.55228475 16,7 C16,6.44771525 16.4477153,6 17,6 L18,6 C20.209139,6 22,7.790861 22,10 L22,18 C22,20.209139 20.209139,22 18,22 L6,22 C3.790861,22 2,20.209139 2,18 L2,9.99305689 C2,7.7839179 3.790861,5.99305689 6,5.99305689 L7.00000482,5.99305689 C7.55228957,5.99305689 8.00000482,6.44077214 8.00000482,6.99305689 C8.00000482,7.54534164 7.55228957,7.99305689 7.00000482,7.99305689 L6,7.99305689 C4.8954305,7.99305689 4,8.88848739 4,9.99305689 L4,18 C4,19.1045695 4.8954305,20 6,20 L18,20 C19.1045695,20 20,19.1045695 20,18 L20,10 C20,8.8954305 19.1045695,8 18,8 L17,8 Z" fill="#fff" fill-rule="nonzero" opacity="0.5"></path>
-                                      <path d="M14.2928932,10.2928932 C14.6834175,9.90236893 15.3165825,9.90236893 15.7071068,10.2928932 C16.0976311,10.6834175 16.0976311,11.3165825 15.7071068,11.7071068 L12.7071068,14.7071068 C12.3165825,15.0976311 11.6834175,15.0976311 11.2928932,14.7071068 L8.29289322,11.7071068 C7.90236893,11.3165825 7.90236893,10.6834175 8.29289322,10.2928932 C8.68341751,9.90236893 9.31658249,9.90236893 9.70710678,10.2928932 L12,12.5857864 L14.2928932,10.2928932 Z" fill="#fff" fill-rule="nonzero"></path>
-                                    </g></svg><!--end::Svg Icon--></span>
-                                استيراد الطلاب من اكسيل
-                              </a>
-                            </div>
-
-                             
-                            <div class="d-flex align-items-center justify-content-between mb-2">
-                              <label class="form-check form-check-custom form-check-solid align-items-start mb-3">
-                                <input class="form-check-input me-3" type="checkbox" value="1" name="Checkboxes1"  checked="checked"/>
-                                <span class="form-check-label d-flex flex-column align-items-start">
-                                  <span class="fs-5 mb-0">ابتدائي طفولة مبكرة</span>
-                                </span>
-                              </label>
-                              <a href="#" class="btn btn-sm btn-bg-hover-3">
-                                <span class="svg-icon svg-icon-primary svg-icon-2x">
-                                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                      <rect fill="#fff" opacity="0.3" transform="translate(12.000000, 7.000000) rotate(-180.000000) translate(-12.000000, -7.000000) " x="11" y="1" width="2" height="12" rx="1"></rect>
-                                      <path d="M17,8 C16.4477153,8 16,7.55228475 16,7 C16,6.44771525 16.4477153,6 17,6 L18,6 C20.209139,6 22,7.790861 22,10 L22,18 C22,20.209139 20.209139,22 18,22 L6,22 C3.790861,22 2,20.209139 2,18 L2,9.99305689 C2,7.7839179 3.790861,5.99305689 6,5.99305689 L7.00000482,5.99305689 C7.55228957,5.99305689 8.00000482,6.44077214 8.00000482,6.99305689 C8.00000482,7.54534164 7.55228957,7.99305689 7.00000482,7.99305689 L6,7.99305689 C4.8954305,7.99305689 4,8.88848739 4,9.99305689 L4,18 C4,19.1045695 4.8954305,20 6,20 L18,20 C19.1045695,20 20,19.1045695 20,18 L20,10 C20,8.8954305 19.1045695,8 18,8 L17,8 Z" fill="#fff" fill-rule="nonzero" opacity="0.5"></path>
-                                      <path d="M14.2928932,10.2928932 C14.6834175,9.90236893 15.3165825,9.90236893 15.7071068,10.2928932 C16.0976311,10.6834175 16.0976311,11.3165825 15.7071068,11.7071068 L12.7071068,14.7071068 C12.3165825,15.0976311 11.6834175,15.0976311 11.2928932,14.7071068 L8.29289322,11.7071068 C7.90236893,11.3165825 7.90236893,10.6834175 8.29289322,10.2928932 C8.68341751,9.90236893 9.31658249,9.90236893 9.70710678,10.2928932 L12,12.5857864 L14.2928932,10.2928932 Z" fill="#fff" fill-rule="nonzero"></path>
-                                    </g></svg><!--end::Svg Icon--></span>
-                                استيراد الطلاب من اكسيل
-                              </a>
-                            </div>
-                             
-                            <div class="d-flex align-items-center justify-content-between mb-2">
-                              <label class="form-check form-check-custom form-check-solid align-items-start mb-3">
-                                <input class="form-check-input me-3" type="checkbox" value="1" />
-                                <span class="form-check-label d-flex flex-column align-items-start">
-                                  <span class="fs-5 mb-0"> المرحلة المتوسطة</span>
-                                </span>
-                              </label>
-                            </div>
-
-                              <div class="d-flex align-items-center justify-content-between mb-2">
-                              <label class="form-check form-check-custom form-check-solid align-items-start mb-3">
-                                <input class="form-check-input me-3" type="checkbox" value="1" />
-                                <span class="form-check-label d-flex flex-column align-items-start">
-                                  <span class="fs-5 mb-0"> المرحلة الثانوية</span>
-                                </span>
-                              </label>
-                            </div>
-
-
+                              <!--begin::Label-->
+                              <label class="required fs-6 fw-bold mb-2">نص الخطاب</label>
+                              <!--end::Label-->
+                              <!--begin::Input-->
+                              <textarea class="form-control" data-kt-autosize="true"></textarea>
+                              <!--end::Input-->
                             </div>
                           </div>
                         </div>
+                        <!--end::Scroll-->
                       </div>
-
-                      <!--end::Input group-->
-                      <!--begin::Input group-->
-                      <div class="row mb-6">
-                        <!--begin::Label-->
-                        <label class="col-lg-4 col-form-label required fw-bold fs-6">نوع المدرسة </label>
-                        <!--end::Label-->
-                        <!--begin::Col-->
-                        <div class="col-lg-8 fv-row">
-                          <!--begin::Input-->
-                          <select name="language" data-control="select2" data-placeholder="بنين – بنات" class="form-select select-kindd form-select-solid form-select-md">
-                            <option value="">بنين – بنات</option>
-                            <option value="boys">بنين</option>
-                            <option value="girls">بنات</option>
-                          </select>
-                          <!--end::Input-->
-                        </div>
-                        <!--end::Col-->
+                      <!--end::Modal body-->
+                      <!--begin::Modal footer-->
+                      <div class="modal-footer flex-center">
+                        <!--begin::Button-->
+                        <button type="reset" id="kt_modal_add_customer_cancel" class="btn btn-light me-3">الغاء</button>
+                        <!--end::Button-->
+                        <!--begin::Button-->
+                        <button type="submit" id="kt_modal_add_customer_submit" class="btn btn-primary">
+                          <span class="indicator-label">حفظ</span>
+                          <span class="indicator-progress">برجاء الانتظار <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+                        </button>
+                        <!--end::Button-->
                       </div>
-                      <!--end::Input group-->
-                      <!--begin::Input group-->
-                      <div class="row mb-6">
-                        <!--begin::Label-->
-                        <label class="col-lg-4 col-form-label required fw-bold fs-6">الرقم الوزاري </label>
-                        <!--end::Label-->
-                        <!--begin::Col-->
-                        <div class="col-lg-8">
-                          <!--begin::Row-->
-                          <div class="row">
-                            <!--begin::Col-->
-                            <div class="col-lg-12 fv-row">
-                              <input type="text" name="fname" class="form-control form-control-md form-control-solid mb-3 mb-lg-0" placeholder="الرقم الوزاري " />
-                            </div>
-                            <!--end::Col-->
-                          </div>
-                          <!--end::Row-->
-                        </div>
-                        <!--end::Col-->
-                      </div>
-                      <!--end::Input group-->
-                      <!--begin::Input group-->
-                      <div class="row mb-6">
-                        <!--begin::Label-->
-                        <label class="col-lg-4 col-form-label required fw-bold fs-6">اسم مدير المدرسة </label>
-                        <!--end::Label-->
-                        <!--begin::Col-->
-                        <div class="col-lg-8">
-                          <!--begin::Row-->
-                          <div class="row">
-                            <!--begin::Col-->
-                            <div class="col-lg-12 fv-row">
-                              <input type="text" name="fname" class="form-control form-control-md form-control-solid mb-3 mb-lg-0" placeholder="اسم مدير المدرسة " />
-                            </div>
-                            <!--end::Col-->
-                          </div>
-                          <!--end::Row-->
-                        </div>
-                        <!--end::Col-->
-                      </div>
-                      <!--end::Input group-->
-                      <!--begin::Input group-->
-                      <div class="row mb-6">
-                        <!--begin::Label-->
-                        <label class="col-lg-4 col-form-label required fw-bold fs-6">إدارة التعليم </label>
-                        <!--end::Label-->
-                        <!--begin::Col-->
-                        <div class="col-lg-8">
-                          <!--begin::Row-->
-                          <div class="row">
-                            <!--begin::Col-->
-                            <div class="col-lg-6 fv-row my-2">
-                              <select name="language" data-control="select2" data-placeholder="منطقة" class="form-select select-kindd form-select-solid form-select-md">
-                                <option></option>
-                                <option value="1">منطقة</option>
-                                <option value="2">الاسكندرية</option>
-                                <option value="3">الاسماعيلية</option>
-                                <option value="4">الشرقية</option>
-                              </select>
-                            </div>
-                            <div class="col-lg-6 fv-row my-2">
-                              <select name="language" data-control="select2" data-placeholder="محافظة" class="form-select select-kindd form-select-solid form-select-md">
-                                <option></option>
-                                <option value="1">محافظة</option>
-                                <option value="2">الاسكندرية</option>
-                                <option value="3">الاسماعيلية</option>
-                                <option value="4">الشرقية</option>
-                              </select>
-                            </div>
-                            <!--end::Col-->
-                          </div>
-                          <!--end::Row-->
-                        </div>
-                        <!--end::Col-->
-                      </div>
-                      <!--end::Input group-->
-                      <!--begin::Input group-->
-                      <div class="row mb-6">
-                        <!--begin::Label-->
-                        <label class="col-lg-4 col-form-label required fw-bold fs-6">المكتب التابع له المدرسة </label>
-                        <!--end::Label-->
-                        <!--begin::Col-->
-                        <div class="col-lg-8">
-                          <!--begin::Row-->
-                          <div class="row">
-                            <!--begin::Col-->
-
-                            <div class="col-lg-12 fv-row">
-                              <select name="language" data-control="select2" data-placeholder="اسم المكتب   " class="form-select select-kindd form-select-solid form-select-md">
-                                <option></option>
-                                <option value="2">الاسكندرية</option>
-                                <option value="3">الاسماعيلية</option>
-                                <option value="4">الشرقية</option>
-                              </select>
-                            </div>
-                            <!--end::Col-->
-                          </div>
-                          <!--end::Row-->
-                        </div>
-                        <!--end::Col-->
-                      </div>
-
-                      <!--end::Input group-->
-
-                      <div class="row mb-6">
-                        <!--begin::Label-->
-                        <label class="col-lg-4 col-form-label required fw-bold fs-6">نوع المبني </label>
-                        <!--end::Label-->
-                        <!--begin::Col-->
-                        <div class="col-lg-8">
-                          <!--begin::Row-->
-                          <div class="row">
-                            <!--begin::Col-->
-
-                            <div class="col-lg-12 fv-row">
-                              <select name="language" data-control="select2" data-placeholder="نوع المبني" class="form-select select-kindd form-select-solid form-select-md">
-                                <option></option>
-                                <option value="1">مستاجر</option>
-                                <option value="2">حكومي</option>
-                              </select>
-                            </div>
-                            <!--end::Col-->
-                          </div>
-                          <!--end::Row-->
-                        </div>
-                        <!--end::Col-->
-                      </div>
-
-                      <div class="row mb-6">
-                        <!--begin::Label-->
-                        <label class="col-lg-4 col-form-label required fw-bold fs-6">التعليم </label>
-                        <!--end::Label-->
-                        <!--begin::Col-->
-                        <div class="col-lg-8">
-                          <!--begin::Row-->
-                          <div class="row">
-                            <!--begin::Col-->
-
-                            <div class="col-lg-12 fv-row">
-                              <select name="language" data-control="select2" data-placeholder="التعليم" class="form-select select-kindd form-select-solid form-select-md">
-                                <option></option>
-                                <option value="1">حكومي</option>
-                                <option value="2">اهلي</option>
-                              </select>
-                            </div>
-                            <!--end::Col-->
-                          </div>
-                          <!--end::Row-->
-                        </div>
-                        <!--end::Col-->
-                      </div>
-
-                      <div class="row mb-6">
-                        <!--begin::Label-->
-                        <label class="col-lg-4 col-form-label required fw-bold fs-6">تاريخ التاسيس </label>
-                        <!--end::Label-->
-                        <!--begin::Col-->
-                        <div class="col-lg-8">
-                          <!--begin::Row--> 
-                          <div class="row">
-                            <!--begin::Col-->
-
-                            <div class="col-lg-12 fv-row">
-                              <input class="form-control form-control-solid" placeholder="" id="kt_modal_date" />
-                            </div>
-                            <!--end::Col-->
-                          </div>
-                          <!--end::Row-->
-                        </div>
-                        <!--end::Col-->
-                      </div>
-
-                      <div class="row mb-6">
-                        <!--begin::Label-->
-                        <label class="col-lg-4 col-form-label required fw-bold fs-6">عدد الادوار بالدور الارضي</label>
-                        <!--end::Label-->
-                        <!--begin::Col-->
-                        <div class="col-lg-8">
-                          <!--begin::Row-->
-                          <div class="row">
-                            <!--begin::Col-->
-                            <div class="col-lg-12 fv-row">
-                              <select name="language" data-control="select2" data-placeholder="عدد الادوار " class="form-select select-kindd form-select-solid form-select-md">
-                                <option></option>
-                                <option value="2">6 ادوار</option>
-                                <option value="3">7 ادوار</option>
-                                <option value="4">8 ادوار</option>
-                                <option value="5">9 ادوار</option>
-                                <option value="6">10 ادوار</option>
-                              </select>
-                            </div>
-                            <!--end::Col-->
-                          </div>
-                          <!--end::Row-->
-                        </div>
-                        <!--end::Col-->
-                      </div>
-
-                      <div class="row mb-6">
-                        <!--begin::Label-->
-                        <label class="col-lg-4 col-form-label required fw-bold fs-6">عدد الوكلاء</label>
-                        <!--end::Label-->
-                        <!--begin::Col-->
-                        <div class="col-lg-8">
-                          <!--begin::Row-->
-                          <div class="row">
-                            <!--begin::Col-->
-                            <div class="col-lg-12 fv-row">
-                              <select name="language" data-control="select2" data-placeholder="عدد الوكلاء" class="form-select select-kindd form-select-solid form-select-md">
-                                <option></option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                              </select>
-                            </div>
-                            <!--end::Col-->
-                          </div>
-                          <!--end::Row-->
-                        </div>
-                        <!--end::Col-->
-                      </div>
-
-                      <div class="border-container-1 mb-6">
-                        <div class="row">
-                          <!--begin::Label-->
-                          <label class="col-lg-4 col-form-label required fw-bold fs-6">بيانات الوكيل </label>
-
-                          <!--begin::Col-->
-                          <div class="col-lg-8">
-                            <!--begin::Row-->
-                            <div class="row">
-                              <!--begin::Col-->
-                              <div class="col-lg-6 fv-row my-2">
-                                <input type="text" name="fname" class="form-control form-control-md form-control-solid" placeholder="اسم الوكيل " />
-                              </div>
-
-                              <div class="col-lg-6 fv-row my-2">
-                                <select name="language" data-control="select2" data-placeholder="المسئولية" class="form-select form-control-md select-kindd form-select-solid form-select-md">
-                                  <option></option>
-                                  <option value="2">وكيل شئون طلاب</option>
-                                  <option value="3">وكيل شئون تعليمية</option>
-                                  <option value="4">وكيل شئون مدرسية</option>
-                                </select>
-                              </div>
-
-                              <div class="col-lg-6 fv-row my-2">
-                                <input type="text" name="fname" class="form-control form-control-md form-control-solid" placeholder="اسم المستخدم " />
-                              </div>
-                              <div class="col-lg-6 fv-row my-2">
-                                <input type="text" name="fname" class="form-control form-control-md form-control-solid mb-3 mb-lg-0" placeholder="كلمة المرور " />
-                              </div>
-                              <!--end::Col-->
-                            </div>
-                            <!--end::Row-->
-                          </div>
-                          <!--end::Col-->
-                        </div>
-                      </div>
-
-                      <div class="border-container-1 mb-6">
-                        <div class="row">
-                          <!--begin::Label-->
-                          <label class="col-lg-4 col-form-label required fw-bold fs-6">بيانات الوكيل </label>
-
-                          <!--begin::Col-->
-                          <div class="col-lg-8">
-                            <!--begin::Row-->
-                            <div class="row">
-                              <!--begin::Col-->
-                              <div class="col-lg-6 fv-row my-2">
-                                <input type="text" name="fname" class="form-control form-control-md form-control-solid" placeholder="اسم الوكيل " />
-                              </div>
-                              <div class="col-lg-6 fv-row my-2">
-                                <select name="language" data-control="select2" data-placeholder="المسئولية" class="form-select form-control-md select-kindd form-select-solid form-select-md">
-                                  <option></option>
-                                  <option value="2">وكيل شئون طلاب</option>
-                                  <option value="3">وكيل شئون تعليمية</option>
-                                  <option value="4">وكيل شئون مدرسية</option>
-                                </select>
-                              </div>
-                              <div class="col-lg-6 fv-row my-2">
-                                <input type="text" name="fname" class="form-control form-control-md form-control-solid" placeholder="اسم المستخدم " />
-                              </div>
-                              <div class="col-lg-6 fv-row my-2">
-                                <input type="text" name="fname" class="form-control form-control-md form-control-solid mb-3 mb-lg-0" placeholder="كلمة المرور " />
-                              </div>
-                              <!--end::Col-->
-                            </div>
-                            <!--end::Row-->
-                          </div>
-                          <!--end::Col-->
-                        </div>
-                      </div>
-
-                      <div class="row mb-6">
-                        <!--begin::Label-->
-                        <label class="col-lg-4 col-form-label required fw-bold fs-6">عدد المرافق</label>
-                        <!--end::Label-->
-                        <!--begin::Col-->
-                        <div class="col-lg-8">
-                          <!--begin::Row-->
-                          <div class="row g-4">
-                            <!--begin::Col-->
-                            <div class="col-lg-6 fv-row">
-                              <label class="form-check form-check-custom form-check-solid align-items-start">
-                                <!--begin::Input-->
-                                <input class="form-check-input me-3" type="checkbox" value="1" />
-                                <!--end::Input-->
-                                <!--begin::Label-->
-                                <span class="form-check-label d-flex flex-column align-items-start">
-                                  <span class="fs-5 mb-0">مختبر</span>
-                                </span>
-                                <!--end::Label-->
-                              </label>
-                            </div>
-                            <div class="col-lg-6 fv-row">
-                              <label class="form-check form-check-custom form-check-solid align-items-start">
-                                <!--begin::Input-->
-                                <input class="form-check-input me-3" type="checkbox" value="1" />
-                                <!--end::Input-->
-                                <!--begin::Label-->
-                                <span class="form-check-label d-flex flex-column align-items-start">
-                                  <span class="fs-5 mb-0">معمل حاسب </span>
-                                </span>
-                                <!--end::Label-->
-                              </label>
-                            </div>
-                            <div class="col-lg-6 fv-row">
-                              <label class="form-check form-check-custom form-check-solid align-items-start">
-                                <!--begin::Input-->
-                                <input class="form-check-input me-3" type="checkbox" value="1" />
-                                <!--end::Input-->
-                                <!--begin::Label-->
-                                <span class="form-check-label d-flex flex-column align-items-start">
-                                  <span class="fs-5 mb-0">صالة رياضية</span>
-                                </span>
-                                <!--end::Label-->
-                              </label>
-                            </div>
-                            <div class="col-lg-6 fv-row">
-                              <label class="form-check form-check-custom form-check-solid align-items-start">
-                                <!--begin::Input-->
-                                <input class="form-check-input me-3" type="checkbox" value="1" />
-                                <!--end::Input-->
-                                <!--begin::Label-->
-                                <span class="form-check-label d-flex flex-column align-items-start">
-                                  <span class="fs-5 mb-0">مسرح</span>
-                                </span>
-                                <!--end::Label-->
-                              </label>
-                            </div>
-                            <div class="col-lg-6 fv-row">
-                              <label class="form-check form-check-custom form-check-solid align-items-start">
-                                <!--begin::Input-->
-                                <input class="form-check-input me-3" type="checkbox" value="1" />
-                                <!--end::Input-->
-                                <!--begin::Label-->
-                                <span class="form-check-label d-flex flex-column align-items-start">
-                                  <span class="fs-5 mb-0">ملعب</span>
-                                </span>
-                                <!--end::Label-->
-                              </label>
-                            </div>
-                            <div class="col-lg-6 fv-row">
-                              <label class="form-check form-check-custom form-check-solid align-items-start">
-                                <!--begin::Input-->
-                                <input class="form-check-input me-3" type="checkbox" value="1" />
-                                <!--end::Input-->
-                                <!--begin::Label-->
-                                <span class="form-check-label d-flex flex-column align-items-start">
-                                  <span class="fs-5 mb-0">فناء خارجي</span>
-                                </span>
-                                <!--end::Label-->
-                              </label>
-                            </div>
-                            <div class="col-lg-6 fv-row">
-                              <label class="form-check form-check-custom form-check-solid align-items-start">
-                                <!--begin::Input-->
-                                <input class="form-check-input me-3" type="checkbox" value="1" />
-                                <!--end::Input-->
-                                <!--begin::Label-->
-                                <span class="form-check-label d-flex flex-column align-items-start">
-                                  <span class="fs-5 mb-0">فناء داخلي</span>
-                                </span>
-                                <!--end::Label-->
-                              </label>
-                            </div>
-                            <div class="col-lg-6 fv-row">
-                              <label class="form-check form-check-custom form-check-solid align-items-start">
-                                <!--begin::Input-->
-                                <input class="form-check-input me-3" type="checkbox" value="1" />
-                                <!--end::Input-->
-                                <!--begin::Label-->
-                                <span class="form-check-label d-flex flex-column align-items-start">
-                                  <span class="fs-5 mb-0">مصادر التعلم</span>
-                                </span>
-                                <!--end::Label-->
-                              </label>
-                            </div>
-                            <!--end::Col-->
-                          </div>
-                          <!--end::Row-->
-                        </div>
-                        <!--end::Col-->
-                      </div>
-
-                      <!--end::Card body-->
-                      <!--begin::Actions-->
-                      <div class="card-footer d-flex justify-content-end py-6 px-9">
-                        <button type="submit" class="btn btn-primary" id="kt_account_profile_details_submit">حفظ البيانات</button>
-                        <button type="reset" class="btn btn-light btn-active-light-primary ms-2">الغاء</button>
-                      </div>
-                      <!--end::Actions-->
-
-                      <!--end::Form-->
-                    </div>
-                    <!--end::Content-->
+                      <!--end::Modal footer-->
+                    </form>
+                    <!--end::Form-->
                   </div>
                 </div>
-                <!--end::Basic info-->
-
-                <!--begin::Basic info-->
               </div>
+              <!--end::Modal - Customers - Add-->
             </div>
           </div>
-
-          <div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
-            <!--begin::Container-->
-            <div class="container-fluid d-flex flex-column flex-md-row align-items-center justify-content-center">
-              <!--begin::Copyright-->
-              <div class="text-dark order-2 order-md-1">
-                <div class="d-flex align-items-center fw-bold fs-6 text-center">جميع الحقوق محفوظة ©️ 2022 مهام دراسية | تطوير الحسام للبرمجيات</div>
-              </div>
-              <!--end::Copyright-->
-            </div>
-            <!--end::Container-->
-          </div>
-
-          <!--end::Footer-->
         </div>
-        <!--end::Wrapper-->
+
+        <div class="footer py-4 d-flex flex-lg-column d-print-none" id="kt_footer">
+          <!--begin::Container-->
+          <div class="container-fluid d-flex flex-column flex-md-row align-items-center justify-content-center">
+            <!--begin::Copyright-->
+            <div class="text-dark order-2 order-md-1">
+              <div class="d-flex align-items-center fw-bold fs-6 text-center">جميع الحقوق محفوظة ©️ 2022 مهام دراسية | تطوير الحسام للبرمجيات</div>
+            </div>
+            <!--end::Copyright-->
+          </div>
+          <!--end::Container-->
+        </div>
+
+        <!--end::Footer-->
       </div>
+      <!--end::Wrapper-->
+
       <!--end::Page-->
     </div>
     <!--end::Root-->
@@ -1161,16 +705,17 @@
       <!--end::Svg Icon-->
     </div>
     <!--end::Scrolltop-->
-  <!--begin::Global Javascript Bundle(used by all pages)-->
-  <script src="assets/plugins/global/plugins.bundle.js"></script>
-  <script src="assets/js/scripts.bundle.js"></script>
-  <!--end::Global Javascript Bundle-->
-  <!--begin::Page Vendors Javascript(used by this page)-->
-
-  <script src="assets/plugins/custom/formrepeater/formrepeater.bundle.js"></script>
-  <!--end::Page Vendors Javascript-->
-  <!--begin::Page Custom Javascript(used by this page)-->
-  <script src="assets/js/widgets.bundle.js"></script>
+    <!--begin::Global Javascript Bundle(used by all pages)-->
+    <script src="assets/plugins/global/plugins.bundle.js"></script>
+    <script src="assets/js/scripts.bundle.js"></script>
+    <!--end::Global Javascript Bundle-->
+    <!--begin::Page Vendors Javascript(used by this page)-->
+    <script src="assets/plugins/custom/datatables/datatables.bundle.js"></script>
+    <!--end::Page Vendors Javascript-->
+    <!--begin::Page Custom Javascript(used by this page)-->
+    <script src="assets/js/custom/apps/customers/add.js"></script>
+    <!--end::Page Custom Javascript-->
+    <!--end::Javascript-->
   </body>
   <!--end::Body-->
 </html>

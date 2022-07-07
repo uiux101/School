@@ -31140,48 +31140,6 @@ color: var(--main4);
     }
 }
 
-@media print {
-    .d-print-inline {
-        display: inline !important
-    }
-
-    .d-print-inline-block {
-        display: inline-block !important
-    }
-
-    .d-print-block {
-        display: block !important
-    }
-
-    .d-print-grid {
-        display: grid !important
-    }
-
-    .d-print-table {
-        display: table !important
-    }
-
-    .d-print-table-row {
-        display: table-row !important
-    }
-
-    .d-print-table-cell {
-        display: table-cell !important
-    }
-
-    .d-print-flex {
-        display: flex !important
-    }
-
-    .d-print-inline-flex {
-        display: inline-flex !important
-    }
-
-    .d-print-none {
-        display: none !important
-    }
-}
-
 :root {
     --bs-light-primary: #F1FAFF;
     --bs-active-primary: #0095E8;
@@ -48932,6 +48890,45 @@ label.rating-label:hover ~ .rating-label {
 }
 
 @media print {
+    .d-print-inline {
+        display: inline !important
+    }
+
+    .d-print-inline-block {
+        display: inline-block !important
+    }
+
+    .d-print-block {
+        display: block !important
+    }
+
+    .d-print-grid {
+        display: grid !important
+    }
+
+    .d-print-table {
+        display: table !important
+    }
+
+    .d-print-table-row {
+        display: table-row !important
+    }
+
+    .d-print-table-cell {
+        display: table-cell !important
+    }
+
+    .d-print-flex {
+        display: flex !important
+    }
+
+    .d-print-inline-flex {
+        display: inline-flex !important
+    }
+
+    .d-print-none {
+        display: none !important
+    }
     .print-content-only {
         padding: 0 !important;
         background: 0 0 !important
@@ -48945,7 +48942,12 @@ label.rating-label:hover ~ .rating-label {
 
         .print-content-only .aside, .print-content-only .btn, .print-content-only .drawer, .print-content-only .footer, .print-content-only .header, .print-content-only .scrolltop, .print-content-only .sidebar, .print-content-only .toolbar {
             display: none !important
-        }
+        } 
+
+    .card-body {
+        padding: 0 !important;
+    }
+            
 }
 
 @media (min-width:992px) {
@@ -49106,23 +49108,6 @@ router-outlet {
 
 canvas {
     user-select: none
-}
-
-@media print {
-    .print-content-only {
-        padding: 0 !important;
-        background: 0 0 !important
-    }
-
-        .print-content-only .container, .print-content-only .container-fluid, .print-content-only .container-lg, .print-content-only .container-md, .print-content-only .container-sm, .print-content-only .container-xl, .print-content-only .container-xxl, .print-content-only .page, .print-content-only .page-title .content, .print-content-only .wrapper {
-            background: 0 0 !important;
-            padding: 0 !important;
-            margin: 0 !important
-        }
-
-        .print-content-only .aside, .print-content-only .btn, .print-content-only .drawer, .print-content-only .footer, .print-content-only .header, .print-content-only .scrolltop, .print-content-only .sidebar, .print-content-only .toolbar {
-            display: none !important
-        }
 }
 
 body {
@@ -49716,22 +49701,7 @@ body {
     background-color: #fff
 }
 
-@media print {
-    .print-content-only {
-        padding: 0 !important;
-        background: 0 0 !important
-    }
 
-        .print-content-only .container, .print-content-only .container-fluid, .print-content-only .container-lg, .print-content-only .container-md, .print-content-only .container-sm, .print-content-only .container-xl, .print-content-only .container-xxl, .print-content-only .docs-page, .print-content-only .docs-page-title .docs-content, .print-content-only .docs-wrapper {
-            background: 0 0 !important;
-            padding: 0 !important;
-            margin: 0 !important
-        }
-
-        .print-content-only .btn, .print-content-only .docs-aside, .print-content-only .docs-header, .print-content-only .drawer, .print-content-only docs- .scrolltop {
-            display: none !important
-        }
-}
 
 .docs-wrapper {
     background-color: #f5f8fa
@@ -50177,4 +50147,6 @@ svg.prjs-shape1 {
 
 
 
-  
+
+
+

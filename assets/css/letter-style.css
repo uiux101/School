@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Harmattan:wght@400;700&display=swap');
+
+
+
+
+/* letter */
+
+  
+.invoice-header {
+    background-image: url(../media/letter-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    min-height: 250px;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    padding: 0 30px ;
+   
+}
+
+.invoice-header h6 {
+    color: white;
+    font-weight: 400;
+    background: #49314b;
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+
+p.letter-text {
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.letter-sign {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.special-text {
+    font-family: 'Harmattan', sans-serif;
+    font-size: 20px;
+margin-top: 30px;
+}
